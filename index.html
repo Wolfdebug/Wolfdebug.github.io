@@ -204,7 +204,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-01-09 17:29:55 / 修改时间：18:27:03" itemprop="dateCreated datePublished" datetime="2020-01-09T17:29:55+08:00">2020-01-09</time>
+              <time title="创建时间：2020-01-09 17:29:55 / 修改时间：18:44:31" itemprop="dateCreated datePublished" datetime="2020-01-09T17:29:55+08:00">2020-01-09</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -232,200 +232,17 @@
         <div class="post-gallery" itemscope itemtype="http://schema.org/ImageGallery">
             <img src="https://typocho-1257109239.cos.ap-chengdu.myqcloud.com/background-img/back_git.jpg" itemprop="contentUrl">
         </div>
-          <a id="more"></a>
-
-<h2 id="git命令速查"><a href="#git命令速查" class="headerlink" title="git命令速查"></a>git命令速查</h2><blockquote>
+          <h2 id="git命令速查"><a href="#git命令速查" class="headerlink" title="git命令速查"></a>git命令速查</h2><blockquote>
 <p>master：默认开发分支    Head：默认开发分支<br>origin：默认远程版本库   Head^：Head的父提交</p>
 </blockquote>
-<h3 id="创建版本库"><a href="#创建版本库" class="headerlink" title="创建版本库"></a>创建版本库</h3><table>
-<thead>
-<tr>
-<th>命令</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>git init</td>
-<td>初始化本地版本库</td>
-</tr>
-<tr>
-<td>git clone &lt;url&gt;</td>
-<td>克隆远程版本库</td>
-</tr>
-</tbody></table>
-<h3 id="修改和提交"><a href="#修改和提交" class="headerlink" title="修改和提交"></a>修改和提交</h3><table>
-<thead>
-<tr>
-<th>命令</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>git diff</td>
-<td>查看变更内容</td>
-</tr>
-<tr>
-<td>git add &lt;file&gt;</td>
-<td>跟踪指定的文件</td>
-</tr>
-<tr>
-<td>git add .</td>
-<td>跟踪所有改动过的文件</td>
-</tr>
-<tr>
-<td>git mv  &lt;old&gt;  &lt;new&gt;</td>
-<td>文件改名</td>
-</tr>
-<tr>
-<td>git rm  &lt;file&gt;</td>
-<td>删除文件</td>
-</tr>
-<tr>
-<td>git rm–cached  &lt;file&gt;</td>
-<td>停止跟踪文件但不删除</td>
-</tr>
-<tr>
-<td>git commit-m”commit message”</td>
-<td>提交所有更新过的文件</td>
-</tr>
-<tr>
-<td>git commit–amend</td>
-<td>修改最后一次提</td>
-</tr>
-</tbody></table>
-<h3 id="查看提交历史"><a href="#查看提交历史" class="headerlink" title="查看提交历史"></a>查看提交历史</h3><table>
-<thead>
-<tr>
-<th>命令</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>git 1og</td>
-<td>查看提交历史</td>
-</tr>
-<tr>
-<td>git 1og-p   &lt;file&gt;</td>
-<td>查看指定文件的提交历史</td>
-</tr>
-<tr>
-<td>git blame  &lt;file&gt;</td>
-<td>以列表方式查看指定文件的提交历史</td>
-</tr>
-</tbody></table>
-<h3 id="撤消"><a href="#撤消" class="headerlink" title="撤消"></a>撤消</h3><table>
-<thead>
-<tr>
-<th>命令</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>git reset–hard HEAD</td>
-<td>撤消工作目录中所有未提交文件的修改内容</td>
-</tr>
-<tr>
-<td>git checkout HEAD  &lt;file&gt;</td>
-<td>搬消指定的未提交文件的修改内容</td>
-</tr>
-<tr>
-<td>git revert &lt;commit&gt;</td>
-<td>撤消指定的提交</td>
-</tr>
-</tbody></table>
-<h3 id="分支与标签"><a href="#分支与标签" class="headerlink" title="分支与标签"></a>分支与标签</h3><table>
-<thead>
-<tr>
-<th>命令</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>git branch</td>
-<td>显示所有本地分支</td>
-</tr>
-<tr>
-<td>git checkout &lt;branch/tag&gt;</td>
-<td>切换到指定分支或标签</td>
-</tr>
-<tr>
-<td>git branch  &lt;new-branch&gt;</td>
-<td>创建新分支</td>
-</tr>
-<tr>
-<td>git branch-d &lt;branch&gt;</td>
-<td>删除本地分支</td>
-</tr>
-<tr>
-<td>git tag</td>
-<td>列出所有本地标签</td>
-</tr>
-<tr>
-<td>git tag &lt;tagname&gt;</td>
-<td>基于最新提交创建标签</td>
-</tr>
-<tr>
-<td>git tag-d   &lt;tagname&gt;</td>
-<td>删除标签</td>
-</tr>
-</tbody></table>
-<h3 id="合并与衍合"><a href="#合并与衍合" class="headerlink" title="合并与衍合"></a>合并与衍合</h3><table>
-<thead>
-<tr>
-<th>命令</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>git merge    &lt;branch&gt;</td>
-<td>合并指定分支到当前分支</td>
-</tr>
-<tr>
-<td>git rebase  &lt;branch&gt;</td>
-<td>衍合指定分支到当前分支</td>
-</tr>
-</tbody></table>
-<h3 id="远程操作"><a href="#远程操作" class="headerlink" title="远程操作"></a>远程操作</h3><table>
-<thead>
-<tr>
-<th>命令</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>git remote   -v</td>
-<td>查看远程版本库信息</td>
-</tr>
-<tr>
-<td>git remote show  &lt;remote&gt;</td>
-<td>查看指定远程版本库信息</td>
-</tr>
-<tr>
-<td>git remote add  &lt;remote&gt;  &lt;url&gt;</td>
-<td>添加远程版本库</td>
-</tr>
-<tr>
-<td>git fetch &lt;remote&gt;</td>
-<td>从远程库获取代码</td>
-</tr>
-<tr>
-<td>git pull  &lt;remote&gt; &lt;branch&gt;</td>
-<td>下载代码及快速合并</td>
-</tr>
-<tr>
-<td>git push  &lt;remote&gt;  &lt;branch&gt;</td>
-<td>上传代码及快速合并</td>
-</tr>
-<tr>
-<td>git push  &lt;remote&gt;: &lt;branch/tag-name&gt;</td>
-<td>删除远程分支或标签</td>
-</tr>
-<tr>
-<td>git push–tags</td>
-<td>上传所有标签</td>
-</tr>
-</tbody></table>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/01/09/git%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -469,7 +286,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-01-09 15:56:56 / 修改时间：18:26:18" itemprop="dateCreated datePublished" datetime="2020-01-09T15:56:56+08:00">2020-01-09</time>
+              <time title="创建时间：2020-01-09 15:56:56 / 修改时间：18:44:49" itemprop="dateCreated datePublished" datetime="2020-01-09T15:56:56+08:00">2020-01-09</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -497,193 +314,17 @@
         <div class="post-gallery" itemscope itemtype="http://schema.org/ImageGallery">
             <img src="https://typocho-1257109239.cos.ap-chengdu.myqcloud.com/background-img/back_jsp.jpg" itemprop="contentUrl">
         </div>
-          <a id="more"></a>
-
-<h2 id="JavaWeb之Jsp"><a href="#JavaWeb之Jsp" class="headerlink" title="JavaWeb之Jsp"></a>JavaWeb之Jsp</h2><h3 id="九大内置对象"><a href="#九大内置对象" class="headerlink" title="九大内置对象"></a>九大内置对象</h3><blockquote>
+          <h2 id="JavaWeb之Jsp"><a href="#JavaWeb之Jsp" class="headerlink" title="JavaWeb之Jsp"></a>JavaWeb之Jsp</h2><h3 id="九大内置对象"><a href="#九大内置对象" class="headerlink" title="九大内置对象"></a>九大内置对象</h3><blockquote>
 <p>pageContext, request, session, application<br>out, response, config, page, exception</p>
 </blockquote>
-<ol>
-<li>request: HttpServletRequest 的一个对象.<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 没有声明就可以使用的对象</span></span><br><span class="line">String userName = request.getParameter(<span class="string">"username"</span>);</span><br><span class="line">out.println(userName);</span><br></pre></td></tr></table></figure></li>
-</ol>
-<p><strong>常用方法：</strong></p>
-<table>
-<thead>
-<tr>
-<th>方法</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>String getParameter(String name)</td>
-<td>根据表单组件名称获取提交数据</td>
-</tr>
-<tr>
-<td>String[ ] getParameterValues(String name)</td>
-<td>获取表单组件对应多个值时的请求数据</td>
-</tr>
-<tr>
-<td>void setCharacterEncoding(String charset)</td>
-<td>指定每个请求的编码</td>
-</tr>
-<tr>
-<td>RequestDispatcher getRequestDispatcher(String path)</td>
-<td>返回一个</td>
-</tr>
-</tbody></table>
-<ol start="2">
-<li><p>response: <code>HttpServletResponse</code> 的一个对象(在 JSP 页面中几乎不会调用 response 的任何方法.)</p>
-</li>
-<li><p>pageContext: 页面的上下文（当前jsp页面）, 是 <code>PageContext</code> 的一个对象. </p>
-<blockquote>
-<p>可以从该对象中获取到其他 8 个隐含对象. 也可以从中获取到当前页面的其他信息. </p>
-</blockquote>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ServletRequest req = pageContext.getRequest();</span><br><span class="line">System.out.print(req == request);</span><br></pre></td></tr></table></figure></li>
-<li><p>session: 代表浏览器和服务器的一次会话跟踪（session失效，就要重新登录）， 是 <code>HttpSession</code> 的一个对象. </p>
-<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%=session.getId() %&gt;;</span><br></pre></td></tr></table></figure></li>
-<li><p>application: 代表当前 WEB 应用. 是 ServletContext 对象.可以获取初始化参数</p>
-</li>
-<li><p>config: 当前 JSP 对应的 Servlet 的 ServletConfig 对象(开发的时候几乎不使用).</p>
-</li>
-<li><p>out: JspWriter 对象. 调用 out.println() 可以直接把字符串打印到浏览器上. 这个是最常用的用法，要注意。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">out.println(request.getParameter(<span class="string">"name"</span>));</span><br></pre></td></tr></table></figure></li>
-<li><p>page: 指向当前 JSP 对应的 Servlet 对象的引用, 但为 Object 类型, 只能调用 Object 类的方法(几乎不使用) </p>
-<blockquote>
-<p>out.println(this) 和 out.println(page);输出的对象是同一个。</p>
-</blockquote>
-</li>
-<li><p>exception: 只有在特殊的时候用，在jsp页面之间点不出来后面的内容的。在声明了 page 指令的<code>isErrorPage=&quot;true&quot;</code> 时, 才可以使用. *<br>定义一个error.jsp，<code>&lt;%@ page isErrorPage=&quot;true&quot; %&gt;</code>然后在页面写代码<code>&lt;% exception.(对应的处理)%&gt;</code></p>
-</li>
-</ol>
-<h3 id="四大作用域"><a href="#四大作用域" class="headerlink" title="四大作用域"></a>四大作用域</h3><blockquote>
-<p>pageContext, request, session, application(对属性的作用域的范围从小到大)<br>在当前作用域找不到某个属性值时，会自动向更大的作用域里面去寻找。   </p>
-</blockquote>
-<h3 id="解决中文乱码"><a href="#解决中文乱码" class="headerlink" title="解决中文乱码"></a>解决中文乱码</h3><p><strong>中文乱码出现的场景及解决方法：</strong></p>
-<blockquote>
-<ol>
-<li>在 JSP 页面上输入中文, 请求页面后出现乱码: </li>
-</ol>
-</blockquote>
-<ul>
-<li>保证  contentType=”text/html; charset=UTF-8”, pageEncoding=”UTF-8”  charset 和 pageEncoding 的编码一致, 且都支持中文. 通常建议取值为UTF-8</li>
-<li>还需保证浏览器的显示的字符编码也和请求的 JSP 页面的编码一致. </li>
-</ul>
-<blockquote>
-<ol start="2">
-<li>获取中文参数值: 默认参数在传输过程中使用的编码为 ISO-8859-1</li>
-</ol>
-</blockquote>
-<ul>
-<li><p>对于 POST 请求: 只要在获取请求信息之前(在调用 request.getParameter), 调用 request.setCharacterEncoding(“UTF-8”) 即可.</p>
-</li>
-<li><p>对于 GET 请求: 前面的方式对于 GET 无效. </p>
-<ul>
-<li><p>治标： 使用参数强转修改     </p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">String username = request.getParameter(<span class="string">"username"</span>);</span><br><span class="line">username = <span class="keyword">new</span> String(username.getBytes(<span class="string">"ISO-8859-1"</span>), <span class="string">"UTF-8"</span>);</span><br><span class="line">out.print(username);</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>治本：URIEncoding参数指定对所有GET方式请求进行统一的重新编码（解码）的编码。</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Connector</span> <span class="attr">connectionTimeout</span>=<span class="string">"20000"</span> <span class="attr">port</span>=<span class="string">"8989"</span> 		 <span class="attr">protocol</span>=<span class="string">"HTTP/1.1"</span> <span class="attr">redirectPort</span>=<span class="string">"8443"</span> <span class="attr">URIEncoding</span>=<span class="string">"utf-8"</span>/&gt;</span></span><br></pre></td></tr></table></figure></li>
-<li><p>useBodyEncodingForURI参数表示是否用request.setCharacterEncoding<br>参数对URL提交的数据和表单中GET方式提交的数据进行重新编码，在默认情况下，该参数为false。</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Connector</span> <span class="attr">connectionTimeout</span>=<span class="string">"20000"</span> <span class="attr">port</span>=<span class="string">"8989"</span> <span class="attr">protocol</span>=<span class="string">"HTTP/1.1"</span> <span class="attr">redirectPort</span>=<span class="string">"8443"</span> <span class="attr">useBodyEncodingForURI</span>=<span class="string">"true"</span>/&gt;</span></span><br></pre></td></tr></table></figure>
-<h3 id="请求中存取属性"><a href="#请求中存取属性" class="headerlink" title="请求中存取属性"></a>请求中存取属性</h3></li>
-</ul>
-</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>方法</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>void setAttribute(String name, Object o)</td>
-<td>设置属性</td>
-</tr>
-<tr>
-<td>Object getAttribute(String name)</td>
-<td>获取指定的属性</td>
-</tr>
-</tbody></table>
-<blockquote>
-<p>1、在使用属性值的时候要做非空判断，否则会出现空指针异常<br>2、它的返回值类型是Object类型，需要做数据类型的转换</p>
-</blockquote>
-<h3 id="转发与重定向"><a href="#转发与重定向" class="headerlink" title="转发与重定向"></a>转发与重定向</h3><ol>
-<li><p>转发</p>
-<blockquote>
-<p>对象: RequestDispatcher</p>
-<p>方法: forward()</p>
-</blockquote>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//java代码</span></span><br><span class="line">request.getRequestDispatcher(<span class="string">"newsDetail.jsp"</span>).forward(request, response);</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--jsp表达式--&gt;</span><br><span class="line">&lt;jsp:forward page=<span class="string">"newsDetail.jsp"</span>&gt;</span><br><span class="line">     &lt;jsp:param value=<span class="string">"abcd"</span> name=<span class="string">"user"</span>/&gt;</span><br><span class="line">&lt;/jsp:forward&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>重定向</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">response.sendRedirect(<span class="string">"url"</span>);</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<h4 id="转发与重定向的区别"><a href="#转发与重定向的区别" class="headerlink" title="转发与重定向的区别"></a>转发与重定向的区别</h4><table>
-<thead>
-<tr>
-<th>请求的转发</th>
-<th>请求的重定向</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>地址栏是初次发出请求的地址.</td>
-<td>地址栏不再是初次发出的请求地址. 地址栏为最后响应的那个地址</td>
-</tr>
-<tr>
-<td>在最终的 request 对象和中转的那个 request 是同一个对象</td>
-<td>在最终的 Servlet 中, request 对象和中转的那个 request 不是同一个对象</td>
-</tr>
-<tr>
-<td>只能转发给当前 WEB 应用的的资源</td>
-<td>可以重定向到任何资源</td>
-</tr>
-<tr>
-<td>/ 代表的是当前 WEB 应用的根目录</td>
-<td>/ 代表的是当前 WEB 站点的根目录. (站点：服务+端口)</td>
-</tr>
-</tbody></table>
-<h3 id="会话机制"><a href="#会话机制" class="headerlink" title="会话机制"></a>会话机制</h3><h4 id="session"><a href="#session" class="headerlink" title="session"></a>session</h4><blockquote>
-<p>一类用来在客户端与服务器端之间保持状态的解决方案;</p>
-<p>有时候Session也用来指这种解决方案的存储结构。</p>
-</blockquote>
-<h5 id="session的流程"><a href="#session的流程" class="headerlink" title="session的流程"></a>session的流程</h5><ol>
-<li>当程序需要为某个客户端的请求创建一个session时，服务器首先检查这个客户端的请求里是否包含了一个session标识(即sessionId),如果已经包含一个sessionId则说明以前已经为此客户创建过session，服务器就按照session id把这个session检索出来使用(如果检索不到，可能会新建一个，这种情况可能出现在服务端已经删除了该用户对应的session对象，但用户人为地在请求的URL后面附加上一个JSESSION的参数)。</li>
-<li>如果客户请求不包含sessionId，则为此客户创建一个session并且生成一个与此session相关联的sessionId，这个session id将在本次响应中返回给客户端保存。</li>
-</ol>
-<h5 id="session的保存机制"><a href="#session的保存机制" class="headerlink" title="session的保存机制"></a>session的保存机制</h5><ol>
-<li>session通过SessionID来区分不同的客户, session是以cookie或URL重写为基础的，默认使用cookie来实现，系统会创造一个名为JSESSIONID的输出cookie，这称之为session cookie</li>
-<li>以区别persistent cookies(也就是我们通常所说的cookie),session cookie是存储于浏览器内存中的，并不是写到硬盘上的，通常看不到JSESSIONID，但是当把浏览器的cookie禁止后，web服务器会采用URL重写的方式传递Sessionid，这时地址栏看到</li>
-<li>session cookie针对某一次会话而言，会话结束session cookie也就随着消失了，而persistent cookie只是存在于客户端硬盘上的一段文本。 </li>
-<li>关闭浏览器（退出浏览器进程），只会是浏览器端内存里的session cookie消失，但不会使保存在服务器端的session对象消失，同样也不会使已经保存到硬盘上的持久化cookie消失。</li>
-</ol>
-<h5 id="清除session和session过期"><a href="#清除session和session过期" class="headerlink" title="清除session和session过期"></a>清除session和session过期</h5><blockquote>
-<p>session是保存在服务器端的对象，是由服务器创建的;</p>
-<p>关闭（退出）浏览器只会使存储在客户端浏览器内存中的session cookie失效，不会使服务器端的session对象失效。</p>
-</blockquote>
-<ol>
-<li><p>直接调用 HttpSession 的 invalidate()<br>调用了之后，session对象会被删除，每次访问这个页面，都是一个新的session对象</p>
-</li>
-<li><p>HttpSession 超过过期时间.</p>
-</li>
-</ol>
-<p><strong>最大时效：</strong> 可以在 web.xml 文件中配置 Session 的最大时效, 单位是分钟</p>
-   <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">session-config</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">session-timeout</span>&gt;</span>30<span class="tag">&lt;/<span class="name">session-timeout</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">session-config</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>返回最大时效: getMaxInactiveInterval() 单位是秒<br>设置最大时效: setMaxInactiveInterval(int interval)</p>
-</blockquote>
-<h4 id="cookie"><a href="#cookie" class="headerlink" title="cookie"></a>cookie</h4><h5 id="存储用户数据"><a href="#存储用户数据" class="headerlink" title="存储用户数据"></a>存储用户数据</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment">// 使用Cookie,存储用户数据</span></span><br><span class="line">Cookie cookie = <span class="keyword">new</span> Cookie(<span class="string">"userName"</span>, userName);</span><br><span class="line"><span class="comment">// 设置路径：这个路径标识该应用下都可以访问cookie，如果不设置,只有该cookie和子路径可以访问</span></span><br><span class="line">cookie.setPath(<span class="string">"/"</span>);</span><br><span class="line"><span class="comment">// 设置cookie的失效（生命周期）可以使正值，也是负值（不生效），单位是秒</span></span><br><span class="line">cookie.setMaxAge(<span class="number">10</span>*<span class="number">60</span>);</span><br><span class="line">response.addCookie(cookie);</span><br></pre></td></tr></table></figure>
-
-<h5 id="获取cookie"><a href="#获取cookie" class="headerlink" title="获取cookie"></a>获取cookie</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Cookie[] cookies = request.getCookies();</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(cookies != <span class="keyword">null</span> &amp;&amp; cookies.length != <span class="number">0</span>)&#123;</span><br><span class="line">    <span class="keyword">for</span>(Cookie cookie : cookies)&#123;</span><br><span class="line">        <span class="keyword">if</span>(cookie.getName().equals(<span class="string">"userName"</span>))&#123;</span><br><span class="line">            userName = cookie.getValue();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="application记录页面访问次数"><a href="#application记录页面访问次数" class="headerlink" title="application记录页面访问次数"></a>application记录页面访问次数</h3><blockquote>
-<p>application是整个web应用内有效，跟用户或者浏览器没有关系</p>
-</blockquote>
-<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;%</span><br><span class="line">    Object count = application.getAttribute(<span class="string">"count"</span>);</span><br><span class="line">    <span class="keyword">if</span>(count == <span class="keyword">null</span>)&#123;</span><br><span class="line">    application.setAttribute(<span class="string">"count"</span>, <span class="number">1</span>);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    Integer integer = (Integer)count;</span><br><span class="line">    application.setAttribute(<span class="string">"count"</span>, integer + <span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    Integer nowCount = (Integer)application.getAttribute(<span class="string">"count"</span>);</span><br><span class="line">    out.println(<span class="string">"访问次数："</span> + nowCount + <span class="string">" 次"</span>);         </span><br><span class="line">%&gt;</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/01/09/JavaWeb%E4%B9%8BJSP/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
