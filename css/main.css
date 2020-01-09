@@ -1156,7 +1156,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #6799ff;
+  background: #d77af5;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2560,7 +2560,7 @@ ul.breadcrumb li + li:last-child {
   }
 }
 body {
-  background-color: #7dbeb6;
+  background-color: #c7f0db;
 }
 .sidebar {
   background-color: transparent;
@@ -2570,11 +2570,13 @@ article.post-block.home,
 article.post-block {
   background-color: #fff;
   margin-top: 0px;
-  margin-bottom: 60px;
-  border-radius: 12px;
+  margin-bottom: 50px;
+  border-radius: 10px;
   padding: 25px;
-  -webkit-box-shadow: 0px 0px 5px 5px #f88a93;
-  -moz-box-shadow: 0px 0px 5px 5px #f88a93;
+  -webkit-box-shadow: 0 15px 10px -10px rgba(0,0,0,0.5), 0 1px 4px rgba(0,0,0,0.3), 0 0 60px rgba(0,0,0,0.1) inset;
+  -moz-box-shadow: 0 15px 10px -10px rgba(0,0,0,0.5), 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+  box-shadow: 0 15px 10px -10px rgba(0,0,0,0.5), 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+  transition: box-shadow 0.3s;
 }
 .content {
   margin-top: 22px;
